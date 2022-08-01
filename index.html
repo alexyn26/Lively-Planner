@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Lively Planner Form</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class = "h-screen bg-purple-600">
+    <h1 class ="text-3xl text-center font-bold underline text-white">Lively Planner Form</h1>   <br></br> 
+    <!-- form to hold the question, dropdown, and button -->
+    <div class = "p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 text-center">
+   <form action="">
+    <label class="text-2xl  question" for="question">What type of daily content would you like to see?</label><br><br>
+    <!-- in the select tag the attribute of required was added to ensure an item was selected  -->
+    <select name="category" id="category" required>
+        <option value="">--Please choose an option--</option>
+        <option value="programming-joke">Programming Joke</option>
+        <option value="fun-fact">Fun Fact</option>
+        <option value="random">Random</option>
+    </select> <br><br>
+    <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Ready to Plan!</button>
+   </form>
+</div>
+</div>
+<script src=""></script></body>
+</html>
