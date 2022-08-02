@@ -24,8 +24,23 @@
     
      <!-- calendar -->
     <aside>
-        <dic class="calendar" id="calendar"></dic>
+        <div>calendar</div>
+        <div class="calendar" id="calendar">calendar</div>
     </aside>
+ 
+    <!-- below is js merge calIndex html into index2 as a div tag -->
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+        <script> 
+        $(function(){
+          $("#calendar").load("calIndex.html"); 
+        });
+        </script> 
+    <!-- -->
+
+
+
+
+
 
     <!-- create or add info button -->
     <footer>
