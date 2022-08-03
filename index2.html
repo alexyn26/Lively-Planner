@@ -29,10 +29,27 @@
     </div>
     
      <!-- calendar -->
+    <aside>
+        <div>calendar</div>
+        <div class="calendar" id="calendar">calendar</div>
+    </aside>
+ 
+    <!-- below is jquery called for merge calIndex html-->
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
+    
     <!---<aside>
       <div class="calendar" id="calendar"> Calendar PLACEHOLDER</div>
     </aside>---->
 
+    <!-- move the bellow code to js when available  -->
+        <script> 
+        $(function(){
+          $("#calendar").load("calIndex.html"); 
+        });
+        </script> 
+    <!-- stop here -->
+
+    
     <!-- create or add info button -->
     <footer>
         <button type="button" class="px-10 py-1 text-sm text-white font-semibold rounded-full border border-purple-200  hover:bg-purple-600 hover:border-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 create" id="create">+</button>
