@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lively Planner calendar</title>
+ 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Lively Planner Calendar</title>
     <link rel="stylesheet" href="">
 </head>
 <body>
+    <div class = "h-screen bg-purple-600">
+        <br><h1 class = "text-white text-3xl text-center">Today is...</h1><br><br>
+    <div class = "p-6 max-w-2xl max-h-96 flex items-stretch mx-auto bg-white rounded-xl shadow-lg flex  space-x-4 text-center ">
     <!-- present day, API jokes, and reminders  -->
     <article class="container" id="container">
-        <H1 class="today" id="today"></H1> <!-- day of today -->
-        <p class="api" id="api"></p> <!-- Fun Fact -->
-        <p class="remind" id="remind"></p> <!-- events -->
+        <H1 class="today" id="today">Monday, August 1, 2022</H1> <!-- day of today -->
+        <p class="api" id="api">Fun Facts</p> <!-- Fun Fact -->
+        <p class="remind" id="remind">Reminders for the day</p> <!-- events -->
     </article>
     
     <!-- buttons -->
     <section class="buttons">
-        <button type="button" class="share" id="share">Share</button>
-        <button type="button" class="new" id="new">Get a new fact.</button>
-        <button type="button" class="save" id="save">Save fact</button>
+        <button type="button" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 share" id="share">Share</button>
+        <button type="button" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 new" id="new">Get a new fact.</button>
+        <button type="button" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 save" id="save">Save fact</button>
     </section>
+    </div>
     
      <!-- calendar -->
     <aside>
@@ -31,6 +37,9 @@
     <!-- below is jquery called for merge calIndex html-->
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script> 
     
+    <!---<aside>
+      <div class="calendar" id="calendar"> Calendar PLACEHOLDER</div>
+    </aside>---->
 
     <!-- move the bellow code to js when available  -->
         <script> 
@@ -43,9 +52,75 @@
     
     <!-- create or add info button -->
     <footer>
-        <button type="button" class="create" id="create">+</button>
-        <p>create event or reminder</p>
+        <button type="button" class="px-10 py-1 text-sm text-white font-semibold rounded-full border border-purple-200  hover:bg-purple-600 hover:border-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 create" id="create">+</button>
+        <p class ="text-white">create an event or reminder</p>
     </footer>
     <script src=""></script>
-</body>
+
+</div>
+
+
+
+    <header class="jumbotron">
+      
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <div class="border- black container">
+      <!-- Timeblocks -->
+      <div class="row">
+        <div class="col-sm border-black hour time-block" id="hour1"></div>
+        <textarea class=" col-sm border-black description" id="note1"></textarea>
+        <button class="col-sm saveBtn" id="save1">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-sm hour time-block" id="hour2"></div>
+        <textarea class="col-sm description" id="note2"></textarea>
+        <button class="col-sm saveBtn" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-sm hour time-block" id="hour3"></div>
+        <textarea class="col-sm description" id="note3"></textarea>
+        <button class="col-sm saveBtn" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-sm hour time-block" id="hour4"></div>
+        <textarea class="col-sm description" id="note4"></textarea>
+        <button class="col-sm saveBtn" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-sm hour time-block" id="hour5"></div>
+        <textarea class="col-sm description" id="note5"></textarea>
+        <button class="col-sm saveBtn" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-sm hour time-block" id="hour6"></div>
+        <textarea class="col-sm description" id="note6"></textarea>
+        <button class="col-sm saveBtn" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-sm hour time-block" id="hour7"></div>
+        <textarea class="col-sm description" id="note7"></textarea>
+        <button class="col-sm saveBtn" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-sm hour time-block" id="hour8"></div>
+        <textarea class="col-sm description" id="note8"></textarea>
+        <button class="col-sm saveBtn" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="col-sm hour time-block" id="hour9"></div>
+        <textarea class="col-sm description" id="note9"></textarea>
+        <button class="col-sm saveBtn" id="event">Save</button>
+      </div>
+    </div>
+          
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src=""></script>
+  </body>
 </html>
