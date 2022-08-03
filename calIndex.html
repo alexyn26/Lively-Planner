@@ -20,6 +20,29 @@
   </head>
 
   <body>
+ <!-- present day, API jokes, and reminders  -->
+ <article class="container" id="container">
+  <H1 class="today" id="today"></H1> <!-- day of today -->
+  <p class="api" id="api"></p> <!-- Fun Fact -->
+  <p class="remind" id="remind"></p> <!-- events -->
+</article>
+
+<!-- buttons -->
+<section class="buttons">
+  <button type="button" class="share" id="share">Share</button>
+  <button type="button" class="new" id="new">Get a new fact.</button>
+  <button type="button" class="save" id="save">Save fact</button>
+</section>
+
+<!-- calendar -->
+<aside>
+  <dic class="calendar" id="calendar"></dic>
+</aside>
+
+<!-- create or add info button -->
+
+  <button type="button" class="create" id="create">+</button>
+  <p>create event or reminder</p>
 
     <header class="jumbotron">
       <h1 class="display-3">Day Planner</h1>
@@ -81,6 +104,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
