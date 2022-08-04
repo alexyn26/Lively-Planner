@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -19,61 +19,52 @@
     <title>Day Planner</title>
   </head>
 
-  <body>
+  <body class ="bg-blue-200">
 
     <header class="jumbotron">
-      <h1 class="display-3">Day Planner</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <h1 class="text-3xl text-blue-700 text-center font-bold">Day Planner</h1>
       <p id="currentDay" class="lead"></p>
     </header>
 
     <div class="container">
       <!-- Timeblocks -->
       <div class="row">
-        <div class="col-sm hour time-block" id="hour1"></div>
-        <textarea class="col-sm description" id="note1"></textarea>
-        <button class="col-sm saveBtn" id="save1">Save</button>
+        <div class="monday" id="monday">Monday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note1"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="save1">Save</button>
       </div>
       <div class="row">
-        <div class="col-sm hour time-block" id="hour2"></div>
-        <textarea class="col-sm description" id="note2"></textarea>
-        <button class="col-sm saveBtn" id="event">Save</button>
+        <div class="tuesday" id="tuesday">Tuesday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note2"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
       </div>
       <div class="row">
-        <div class="col-sm hour time-block" id="hour3"></div>
-        <textarea class="col-sm description" id="note3"></textarea>
-        <button class="col-sm saveBtn" id="event">Save</button>
+        <div class="wednesday" id="wednesday">Wednesday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note3"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
       </div>
       <div class="row">
-        <div class="col-sm hour time-block" id="hour4"></div>
-        <textarea class="col-sm description" id="note4"></textarea>
-        <button class="col-sm saveBtn" id="event">Save</button>
+        <div class="thursday" id="thursday">Thursday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note4"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
       </div>
       <div class="row">
-        <div class="col-sm hour time-block" id="hour5"></div>
-        <textarea class="col-sm description" id="note5"></textarea>
-        <button class="col-sm saveBtn" id="event">Save</button>
+        <div class="friday" id="friday">Friday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note5"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
       </div>
       <div class="row">
-        <div class="col-sm hour time-block" id="hour6"></div>
-        <textarea class="col-sm description" id="note6"></textarea>
-        <button class="col-sm saveBtn" id="event">Save</button>
+        <div class="saturday" id="saturday">Saturday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note6"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
       </div>
       <div class="row">
-        <div class="col-sm hour time-block" id="hour7"></div>
-        <textarea class="col-sm description" id="note7"></textarea>
-        <button class="col-sm saveBtn" id="event">Save</button>
+        <div class="sunday" id="sunday">Sunday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note7"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
       </div>
-      <div class="row">
-        <div class="col-sm hour time-block" id="hour8"></div>
-        <textarea class="col-sm description" id="note8"></textarea>
-        <button class="col-sm saveBtn" id="event">Save</button>
-      </div>
-      <div class="row">
-        <div class="col-sm hour time-block" id="hour9"></div>
-        <textarea class="col-sm description" id="note9"></textarea>
-        <button class="col-sm saveBtn" id="event">Save</button>
-      </div>
+    
+      
     </div>
           
 
@@ -81,6 +72,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
