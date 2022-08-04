@@ -10,23 +10,24 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
-    <div class = "h-screen bg-purple-600">
+    <div class = " relative h-screen bg-purple-600  top-0">
         <br><h1 class = "text-white text-3xl text-center">Today is...</h1><br><br>
-    <div class = "p-6 max-w-2xl max-h-96 flex items-stretch mx-auto bg-white rounded-xl shadow-lg flex  space-x-4 text-center ">
+    <div class = "p-6 max-w-2xl max-h-96 flex  mx-auto bg-white rounded-xl shadow-lg flex  space-x-4 text-center relative ">
     <!-- present day, API jokes, and reminders  -->
-    <article class="container" id="container">
+    <article class="container static block" id="container">
         <H1 class="today" id="today">Monday, August 1, 2022</H1> <!-- day of today -->
         <p class="api" id="api">Fun Facts</p> <!-- Fun Fact -->
         <p class="remind" id="remind">Reminders for the day</p> <!-- events -->
     </article>
-    
+    <br><br>
+    <br>
     <!-- buttons -->
+    <div class = "container static">
     <section class="buttons">
-        <button type="button" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 share" id="share">Share</button>
         <button type="button" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 new" id="new">Get a new fact.</button>
         <button type="button" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 save" id="save">Save fact</button>
     </section>
-    
+    </div>
      <!-- calendar -->
     <aside>
         <div>calendar</div>
@@ -51,10 +52,22 @@
     
     <!-- create or add info button -->
     <footer>
-        <button type="button" class="px-10 py-1 text-sm text-white font-semibold rounded-full border border-purple-200  hover:bg-purple-600 hover:border-white focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 create" id="create">+</button>
+        <button type="button" class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 create" id="create">+</button>
         <p class ="text-white">create an event or reminder</p>
     </footer>
     <script src=""></script>
 
+
+
+
+
+   
+          
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src=""></script>
   </body>
 </html>
