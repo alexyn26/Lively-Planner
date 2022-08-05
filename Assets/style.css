@@ -1,0 +1,7 @@
+.h2.a {
+    visibility: visible;
+  }
+  
+  h2.b {
+    visibility: hidden;
+  }
