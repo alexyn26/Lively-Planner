@@ -1,7 +1,5 @@
-.h2.a {
-    visibility: visible;
-  }
-  
-  h2.b {
-    visibility: hidden;
-  }
+  /* hide element */
+.hide:hover .index3,
+.hide:focus .index3 {
+  opacity: 0;
+}

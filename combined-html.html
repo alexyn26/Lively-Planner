@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./Assets/style.css">
 </head>
 
-<body>
-    <div class = "html1 h-screen bg-blue-200">
+<body class="hide" tabindex="0">
+    <div id="index1" class="index1 h-screen bg-blue-200">
     <h1 class ="text-3xl text-center font-bold underline text-white">Lively Planner Form</h1><br></br> 
     
     <!-- form to hold the question, dropdown, and button -->
@@ -27,7 +27,7 @@
         <option value="fun-fact">Fun Fact</option>
         <option value="random">Random</option>
     </select> <br><br>
-    <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom"><a href="#index2"></a>Ready to Plan!</button>
+    <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom"><a href="#index2">Ready to Plan!</a></button>
    </form>
 </div>
 </div>
@@ -39,8 +39,8 @@
    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>  -->
 
 <!-- Beginning of index2 (displaying joke)-->
-<div class = " mx-auto relative h-screen bg-blue-200  top-0">
-    <br><h1 class="text-blue-700 text-3xl text-center" id="index2">Today is...</h1><br>
+<div id="index2" class="index2 mx-auto relative h-screen bg-blue-200  top-0">
+    <br><h1 class="text-blue-700 text-3xl text-center">Today is...</h1><br>
 <!---<div class = " md:flex p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex  space-x-4 text-center">--->
 <!-- present day, API jokes, and reminders  -->
 
@@ -55,6 +55,7 @@
 </section>
  
 </div>
+<br><br><br><br><br><br>
 <!-- create or add info button
 <footer class = "text-right">
 <button type="button" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 text-left create" id="create">+</button>
@@ -70,7 +71,8 @@
 <!-- below is jquery called for merge calIndex html
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>  -->
 
-<div class ="bg-blue-200">
+<!-- Beginning of index3 (calIndex - planner) -->
+<div id="index3" class="index3 bg-blue-200">
 
     <header class="jumbotron">
       <h1 class="text-3xl text-blue-700 text-center font-bold">Day Planner</h1>

@@ -1,4 +1,6 @@
- //load calendar daily page events view
+document.querySelector('.index3').addEventListener('click', () => alert('hidden item still triggers events'));
+
+//load calendar daily page events view
  $(document).ready(function(){
      $("button").click(function(){
       $("#create").load("   ");
