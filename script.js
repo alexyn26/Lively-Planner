@@ -1,4 +1,4 @@
- //load calendar daily page events view
+//load calendar daily page events view
  $(document).ready(function(){
      $("button").click(function(){
       $("#create").load("   ");

@@ -1,0 +1,10 @@
+   /* Hides index3 (planner) until it is hovered over */
+.index3
+{
+    opacity: 0;
+}
+
+.index3:hover
+{
+   opacity: 1;
+}
