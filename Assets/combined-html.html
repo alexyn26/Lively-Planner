@@ -1,0 +1,161 @@
+<!-- Beginning of index(1) (home page to select options) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Lively Planner Form</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+
+<body>
+    <div class = "html1 h-screen bg-blue-200">
+    <h1 class ="text-3xl text-center font-bold underline text-white">Lively Planner Form</h1><br></br> 
+    
+    <!-- form to hold the question, dropdown, and button -->
+    <div class = "p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 text-center">
+    <form action="">
+    
+    <label class="text-2xl  question" for="question">What type of daily content would you like to see?</label><br><br>
+    <!-- in the select tag the attribute of required was added to ensure an item was selected  -->
+    <select name="category" id="category" required>
+        <option value="">--Please choose an option--</option>
+        <option value="programming-joke">Programming Joke</option>
+        <option value="fun-fact">Fun Fact</option>
+        <option value="random">Random</option>
+    </select> <br><br>
+    <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom"><a href="#index2"></a>Ready to Plan!</button>
+   </form>
+</div>
+</div>
+<!-- <section>
+    <div class="index2" id="index2">calendar</div>
+   </section> -->
+
+   <!-- Samuel adds jquery to merge index2
+   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>  -->
+
+<!-- Beginning of index2 (displaying joke)-->
+<div class = " mx-auto relative h-screen bg-blue-200  top-0">
+    <br><h1 class="text-blue-700 text-3xl text-center" id="index2">Today is...</h1><br>
+<!---<div class = " md:flex p-6 max-w-2xl mx-auto bg-white rounded-xl shadow-lg flex  space-x-4 text-center">--->
+<!-- present day, API jokes, and reminders  -->
+
+<div class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="container">
+    <h1 class="today" id="today">Monday, August 1, 2022</h1> <!-- day of today -->
+    <p class="api" id="api">Fun Facts</p> <!-- Fun Fact -->
+    <p class="remind" id="remind">Reminders for the day</p> <!-- events -->
+ <!-- buttons -->
+<section class="text-bottom buttons">
+    <button type="button" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom new" id="new">Get a new fact.</button>
+    <button type="button" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom save" id="save">Save fact</button>
+</section>
+ 
+</div>
+<!-- create or add info button
+<footer class = "text-right">
+<button type="button" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 text-left create" id="create">+</button>
+<p class ="">create an event or reminder</p>
+
+<aside>
+    <div class="calendar" id="calendar">interactive calendar</div>
+</aside>
+</footer>
+<br><br>
+<br> -->
+
+<!-- below is jquery called for merge calIndex html
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>  -->
+
+<div class ="bg-blue-200">
+
+    <header class="jumbotron">
+      <h1 class="text-3xl text-blue-700 text-center font-bold">Day Planner</h1>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <div class="container">
+      <!-- Timeblocks -->
+      <div class="row">
+        <div class="monday" id="monday">Monday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note1"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="save1">Save</button>
+      </div>
+      <div class="row">
+        <div class="tuesday" id="tuesday">Tuesday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note2"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="wednesday" id="wednesday">Wednesday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note3"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="thursday" id="thursday">Thursday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note4"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="friday" id="friday">Friday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note5"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="saturday" id="saturday">Saturday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note6"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="sunday" id="sunday">Sunday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note7"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+    
+    </div>
+</div>
+          
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  
+   <!-- The code bellow, need to move to JS when available -->
+<!-- <script> 
+         $(function(){
+          $("#index2").load("index2.html"); 
+        });
+</script>  -->
+    <!-- move above code to JS -->
+
+<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
+
+
+
+<!-- Beginning of calIndex -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="" />
+    <title>Day Planner</title>
+  </head> -->
+
+
