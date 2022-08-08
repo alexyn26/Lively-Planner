@@ -34,34 +34,42 @@
 
 <!-- Beginning of index2 (displaying joke)-->
 <div id="index2" class="index2 hide mx-auto relative h-screen bg-blue-200  top-0" tabindex="0">
-    <br><h1 class="text-blue-700 text-3xl text-center">Today is...</h1><br>
-
-<div class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="container">
+    <br><h1 class="text-blue-700 text-3xl text-center">Study-Time</h1><br>
+<br>
+<div class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center  " id="container">
     <h1 class="today" id="today">Monday, August 1, 2022</h1> <!-- day of today -->
     <p class="api" id="api">Fun Facts</p> <!-- Fun Fact -->
  <!-- buttons -->
 <section class="text-bottom buttons">
     <button type="button" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom new" id="new">Get a new fact.</button>
-</section>
- <br><br>
+  </section>
+  </div>
+<br>
+<div class = "mx-auto max-w-sm space-x-4 p-6 rounded-xl  border-2 border-rounded border-blue-300 bg-white text-center" id = "musicContainer">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSSrwtip3vZP?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
-<br><br><br><br><br><br>
-
+ <br><br>
 <div class = "p-6 h-2/5 w-2/5 bg-white rounded-xl shadow-lg flex space-x-4  absolute inset-y-50 left-10 " id = "toDoContainer">
-  <form class= "text-center"  id="toDo">To Do List<br><br>
-   <input type="text" class="rounded-full border border-blue-700 align-text-bottom" id="toDoInput" list="toDoListInput"><br><br>
+  <form class= "text-center"  id="toDo" method = "POST">To Do List<br><br>
+   <input type="text" class="rounded-full border border-blue-700 align-text-bottom" id="toDoInput"><br><br>
    <button type = "submit" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id  ="submitItem">Add to List</button>
 </form>
+
 <br><br>
-<div class = "absolute inset-x-0 bottom-20 text-center" id="listContainer"
-<checkbox class ="border border-blue-700 ">Example Item</checkbox>
+<div class = "absolute inset-x-0 bottom-20 text-center" id="listContainer">
+  <p><span id="todo-count">0</span></p>
+  <ul id="todoList">
+
+  </ul>
+
 </div>
 </div>
 
-<div class = "p-6 h-2/5 w-2/5 bg-white rounded-xl shadow-lg flex space-x-4  absolute inset-y-50 right-10  ">
-  <div class = "border-blue-700 border-rounded text-center" id="pictureContainer">
-    PLACEHOLDER FOR PICTURE FROM API
+<div class = "p-6 h-2/5 w-2/5 bg-white rounded-xl shadow-lg flex space-x-4 justify-items-center absolute inset-y-50 right-10  ">
+  <div class = "border-blue-700 border-rounded " id="resourceContainer">
+    <a  class = "underline underline-offset-1 text-center" href = "https://developer.mozilla.org/en-US/">mdn webdocs</a><br>
+    <a  class = "underline underline-offset-1 text-center" href = "https://tailwindcss.com/"> Tailwind CSS</a><br>
   </div>
   
 </div>
