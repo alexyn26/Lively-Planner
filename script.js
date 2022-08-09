@@ -169,8 +169,8 @@ function showIndex2(){
   //   } else if (random == 1){
   //   getJokes();
   //   }
-  // }
-
+    // }
+  
 
 
 
@@ -353,7 +353,7 @@ initSrc();
 
 >>>>>>> AddSourcesListSection
 =======
-  
+
 
 
 // function showIndex3(){
