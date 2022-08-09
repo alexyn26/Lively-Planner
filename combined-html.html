@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./Assets/style.css">
 </head>
 
-<body>
+<body class="bg-blue-200">
     <div id="index1" class="index1 hide h-screen bg-blue-200" tabindex="0">
     <h1 class ="text-3xl text-center font-bold underline text-white">Lively Planner Form</h1><br></br> 
     
@@ -33,7 +33,7 @@
 </div>
 
 <!-- Beginning of index2 (displaying joke)-->
-<div id="index2" class="index2 hide mx-auto relative h-screen bg-blue-200  top-0" tabindex="0">
+<div id="index2" class="index2 hide mx-auto h-screen bg-blue-200  top-0" tabindex="0">
     <br><h1 class="text-blue-700 text-3xl text-center">Study-Time</h1><br>
 <br>
 <div class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center  " id="container">
@@ -49,31 +49,34 @@
   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSSrwtip3vZP?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
- <br><br>
-<div class = "p-6 h-2/5 w-2/5 bg-white rounded-xl shadow-lg flex space-x-4  absolute inset-y-50 left-10 " id = "toDoContainer">
-  <form class= "text-center"  id="toDo" method = "POST">To Do List<br><br>
-   <input type="text" class="rounded-full border border-blue-700 align-text-bottom" id="toDoInput"><br><br>
-   <button type = "submit" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id  ="submitItem">Add to List</button>
-</form>
+ <br><br> 
+<div class="flex flex-col md:flex-row"> 
+  <div class = "p-6 m-1 md:w-6/12 bg-white rounded-xl shadow-lg flex space-x-4 flex justify-center   flex-col" id = "toDoContainer">
+    <div class="flex justify-center">
+      <form class= "text-center"  id="toDo" method = "POST">To Do List<br><br>
+        <input type="text" class="rounded-full border border-blue-700 align-text-bottom" id="toDoInput"><br><br>
+        <button type = "submit" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id  ="submitItem">Add to List</button>
+      </form>
+    </div>
 
-<br><br>
-<div class = "absolute inset-x-0 bottom-20 text-center" id="listContainer">
-  <p><span id="todo-count">0</span></p>
-  <ul id="todoList">
+  <br><br>
+  <div class = " inset-x-0 bottom-20 text-center" id="listContainer">
+    <p><span id="todo-count">0</span></p>
+    <ul id="todoList">
 
-  </ul>
+    </ul>
 
-</div>
-</div>
-
-<div class = "p-6 h-2/5 w-2/5 bg-white rounded-xl shadow-lg flex space-x-4 justify-items-center absolute inset-y-50 right-10  ">
-  <div class = "border-blue-700 border-rounded " id="resourceContainer">
-    <a  class = "underline underline-offset-1 text-center" href = "https://developer.mozilla.org/en-US/">mdn webdocs</a><br>
-    <a  class = "underline underline-offset-1 text-center" href = "https://tailwindcss.com/"> Tailwind CSS</a><br>
   </div>
-  
-</div>
+  </div>
 
+  <div class = "p-6 m-1 md:w-6/12 bg-white rounded-xl shadow-lg flex space-x-4 justify-items-center  flex justify-center ">
+    <div class = "border-blue-700 border-rounded " id="resourceContainer">
+      <a  class = "underline underline-offset-1 text-center" href = "https://developer.mozilla.org/en-US/">mdn webdocs</a><br>
+      <a  class = "underline underline-offset-1 text-center" href = "https://tailwindcss.com/"> Tailwind CSS</a><br>
+    </div>
+    
+  </div>
+</div>
 <!--------------NO LONGER NEEDED
  Beginning of index3 (calIndex - planner) 
 <div id="index3" class="index3 bg-blue-200">
