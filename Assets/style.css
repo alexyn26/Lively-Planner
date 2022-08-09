@@ -1,4 +1,5 @@
    /* Hides index3 (planner) until it is hovered over */
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 .index3 {
 =======
@@ -6,6 +7,12 @@
 {
 >>>>>>> Stashed changes
     opacity: 0;
+=======
+
+
+.index3 {
+   opacity: 0;
+>>>>>>> calendar-html
 }
 
 .index3:hover {
@@ -20,13 +27,46 @@
 >>>>>>> Stashed changes
    display:none;
 }
+<<<<<<< HEAD
 #index2{
    display:block;
    opacity:1;
 }
+=======
+
+>>>>>>> calendar-html
 .bottom-right {
    position: absolute;
    bottom: 8px;
    right: 16px;
    font-size: 3em;
+<<<<<<< HEAD
 }
+=======
+}
+
+/* .change-background { */
+   /* background-image: url("https://thumbs.dreamstime.com/b/peaceful-nature-vintage-background-bench-park-42115401.jpg"); */
+   /* background-repeat:no-repeat;
+   background-size:contain;
+   background-position:center; */
+  /* } */
+
+  .change-background-container {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+flex-direction: column;
+border: none;
+background-color: rgb(252, 252, 252);
+border-radius: 15px;
+/* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+  0px; */
+/* color: hsl(249, 86%, 45%); */
+
+  }
+
+
+
+>>>>>>> calendar-html
