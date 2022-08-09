@@ -1,17 +1,22 @@
    /* Hides index3 (planner) until it is hovered over */
-.index3
-{
+.index3 {
     opacity: 0;
 }
 
-.index3:hover
-{
+.index3:hover {
    opacity: 1;
 }
-#todo-count{
+
+#todo-count {
    display:none;
 }
 #index2{
    display:none;
    opacity:1;
+}
+.bottom-right {
+   position: absolute;
+   bottom: 8px;
+   right: 16px;
+   font-size: 3em;
 }
