@@ -166,6 +166,7 @@ function showIndex2(){
 >>>>>>> Stashed changes
 }
 
+<<<<<<< HEAD
   //   } else if (random == 1){
   //   getJokes();
   //   }
@@ -374,3 +375,9 @@ initSrc();
 // }
 
 >>>>>>> Stashed changes
+=======
+function changeBackground(color) {
+  document.querySelector('.change-background-container').style.backgroundColor = color;
+}
+
+>>>>>>> calendar-html
