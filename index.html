@@ -1,0 +1,206 @@
+<!-- Beginning of index(1) (home page to select options) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Lively Planner Form</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body class="bg-blue-200">
+    <div id="index1" class="index1 hide h-screen bg-blue-200" tabindex="0">
+    <h1 class ="text-3xl text-center font-bold underline text-white">Lively Planner Form</h1><br></br> 
+    
+    <!-- form to hold the question, dropdown, and button -->
+    <div class = "p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4 text-center">
+    <form action="">
+    
+    <label class="text-2xl  question" for="question">What type of daily content would you like to see?</label><br><br>
+    <!-- in the select tag the attribute of required was added to ensure an item was selected  -->
+    <select name="category" id="category" required>
+        <option value="">--Please choose an option--</option>
+        <option value="joke">Joke</option>
+        <option value="fun-fact">Fun Fact</option>
+        <option value="random">Random</option>
+    </select> <br><br>
+    <button type = "submit" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id ="readytoPlan" onclick = "showIndex2()" <a>Ready to Plan!</a></button>
+   </form>
+
+   
+</div>
+</div>
+<br>
+<br>
+</div>
+<!-- Beginning of index2 (displaying joke)-->
+<div id="index2" class="change-background-container index2 hide  relative h-screen top-0" tabindex="0">
+  <br><h1 class="text-blue-700 text-3xl text-center">Study-Time</h1><br>
+<br>
+<div class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center  " id="container">
+
+    <h1 class="today" id="today">Monday, August 1, 2022</h1> <!-- day of today -->
+    <p class="api" id="api">Fun Facts</p> <!-- Fun Fact -->
+ <!-- buttons -->
+<section class="text-bottom buttons">
+    <button type="button" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom new" id="new">Get a new content</button>
+  </section>
+
+  <h3 class="">Background Color</h3>
+  <button class ="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" onclick="changeBackground('navy')">Navy</button>
+  <button  class ="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" onclick="changeBackground('green')">Green</button>
+  <button  class ="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" onclick="changeBackground('purple')">Purple</button>
+  <button  class ="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" onclick="changeBackground('black')">Black</button>
+  </div>
+<br>
+<div class = "mx-auto max-w-sm space-x-4 p-6 rounded-xl  border-2 border-rounded border-blue-300 bg-white text-center" id = "musicContainer">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSSrwtip3vZP?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</section>
+</div>
+<br>
+<div class = "mx-auto max-w-md space-x-4 px-0 rounded-xl  border-2 border-rounded border-blue-300 bg-white justify-center" id = "timerContainer">
+  <a class="" href="https://youtu.be/cTH824WnA3U"><iframe width="400" height="236.25" src="https://www.youtube.com/embed/cTH824WnA3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+  </div>
+
+
+<div class="flex flex-col md:flex-row"> 
+  <div class = "center-section p-6 m-1 md:w-6/12 bg-white rounded-xl shadow-lg flex space-x-4 flex justify-center   flex-col" id = "toDoContainer">
+    <div class="flex justify-center">
+      <form class= "text-center"  id="toDo" method = "POST">To Do List<br><br>
+        <input type="text" class="rounded-full border border-blue-700 align-text-bottom" id="toDoInput"><br><br>
+        <button type = "submit" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id  ="submitItem">Add to List</button>
+      </form>
+</div>
+      <div class = " inset-x-0 bottom-20 text-center justify-center" id="listContainer">
+        <p><span id="todo-count"></span></p>
+        <ul id="todoList">
+    
+        </ul>
+    </div>
+    </div>
+
+  <br><br>
+ 
+
+  </div>
+
+
+  <div class = "center-section p-6 m-1 md:w-6/12 bg-white rounded-xl shadow-lg flex space-x-4 justify-items-center  flex justify-center ">
+    <div class = "border-blue-700 border-rounded " id="resourceContainer">
+      
+
+<!-- bellow is source link-->
+  <form class= "text-center"  id="source" method = "POST">Sources List<br><br>
+    <input type="text" class="rounded-full border border-blue-700 align-text-bottom" id="srcInput"><br><br>
+    <button type = "submit" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id  ="submitSrc">Add Source</button>
+  </form>
+
+  <br><br>
+  <div class = "absolute inset-x-0 bottom-20 text-center" id="listContainer">
+    <p><span id="src-count"></span></p>
+    <ul id="srcList">
+
+    </ul>
+      
+      
+  </div>
+<div class ="text-center">
+  <form id="sticky-note1">
+
+    <label for="first">Jot down some notes! Click Enter to clear all.</label>
+    <br>
+    <input type="text" class="form-input" name="quick-note" placeholder="Review flashcards"/>
+</form>
+
+
+<form id="sticky-note2">
+
+    <label for="second"></label>
+    <input type="text" class="form-input" name="quick-note" placeholder="Review flashcards"/>
+</form>
+
+<form id="sticky-note3">
+
+    <label for="third"></label>
+    <input type="text" class="form-input" name="quick-note" placeholder="Review flashcards"/>
+</form>
+
+
+
+<style> 
+    input[type=text] {
+      width: 100%;
+      border: 2px solid lightblue;
+      border-radius: 4px;
+    }
+    </style>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--------------NO LONGER NEEDED
+ Beginning of index3 (calIndex - planner) 
+<div id="index3" class="index3 bg-blue-200">
+
+    <header class="jumbotron">
+      <h1 class="text-3xl text-blue-700 text-center font-bold">Day Planner</h1>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <div class="container">
+       Timeblocks 
+    <div class="container1">
+      Timeblock
+      <div class="row">
+        <div class="monday" id="monday">Monday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note1"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="save1">Save</button>
+      </div>
+      <div class="row">
+        <div class="tuesday" id="tuesday">Tuesday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note2"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="wednesday" id="wednesday">Wednesday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note3"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="thursday" id="thursday">Thursday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note4"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="friday" id="friday">Friday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note5"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="saturday" id="saturday">Saturday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note6"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      <div class="row">
+        <div class="sunday" id="sunday">Sunday</div>
+        <textarea class="mx-auto space-x-4 p-6 rounded-xl max-w-2xl border-2 border-rounded border-blue-300 bg-white text-center" id="note7"></textarea>
+        <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="event">Save</button>
+      </div>
+      
+      <button class = "px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="backtoDailyPage" onclick = "backtoDaily()">Go Back to daily page</button>
+    ---->
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+<!-- Footer -->
