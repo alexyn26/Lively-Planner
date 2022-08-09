@@ -161,7 +161,7 @@ function showIndex2(){
   document.getElementById("index1").style.display = "none";
   getFunFact();
 }
-}
+
 
 
   //   } else if (random == 1){
@@ -353,4 +353,4 @@ initSrc();
 function changeBackground(color) {
   document.querySelector('.change-background-container').style.backgroundColor = color;
 }
-
+  }
