@@ -62,7 +62,12 @@ border-radius: 15px;
 /* color: hsl(249, 86%, 45%); */
 
   }
-
+  .center-section {
+   margin: 1rem auto !important;
+}
+#src-count{
+   display:none;
+}
 
 
 
