@@ -62,8 +62,8 @@
 </section>
 </div>
 <br>
-<div class = "mx-auto max-w-2xl space-x-4 p-6 rounded-xl  border-2 border-rounded border-blue-300 bg-white text-center" id = "musicContainer">
-  <a class="bottom-right" href="https://youtu.be/cTH824WnA3U"><iframe width="420" height="236.25" src="https://www.youtube.com/embed/cTH824WnA3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+<div class = "mx-auto max-w-2xl space-x-4 p-6 rounded-xl  border-2 border-rounded border-blue-300 bg-white text-center" id = "timerContainer">
+  <a class="" href="https://youtu.be/cTH824WnA3U"><iframe width="420" height="236.25" src="https://www.youtube.com/embed/cTH824WnA3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
   </div>
 
 
@@ -74,59 +74,24 @@
         <input type="text" class="rounded-full border border-blue-700 align-text-bottom" id="toDoInput"><br><br>
         <button type = "submit" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id  ="submitItem">Add to List</button>
       </form>
+
+      <div class = " inset-x-0 bottom-20 text-center" id="listContainer">
+        <p><span id="todo-count"></span></p>
+        <ul id="todoList">
+    
+        </ul>
+    </div>
     </div>
 
   <br><br>
-  <div class = " inset-x-0 bottom-20 text-center" id="listContainer">
-    <p><span id="todo-count"></span></p>
-    <ul id="todoList">
-
-    </ul>
+ 
 
   </div>
 
-  
-  
 
-
-  
   <div class = "p-6 m-1 md:w-6/12 bg-white rounded-xl shadow-lg flex space-x-4 justify-items-center  flex justify-center ">
     <div class = "border-blue-700 border-rounded " id="resourceContainer">
       
-
-
-      <form id="sticky-note1">
-
-        <label for="first">Jot down some notes! Click Enter to clear all.</label>
-        <input type="text" class="form-input" name="quick-note" placeholder="Review flashcards"/>
-    </form>
-    
-    
-    <form id="sticky-note2">
-    
-        <label for="second">does this need a label?</label>
-        <input type="text" class="form-input" name="quick-note" placeholder="Review flashcards"/>
-    </form>
-    
-    <form id="sticky-note3">
-    
-        <label for="third">does this need a label?</label>
-        <input type="text" class="form-input" name="quick-note" placeholder="Review flashcards"/>
-    </form>
-    
-    
-    
-    <style> 
-        input[type-=text] {
-          width: 200%;
-          border: 2px solid lightblue;
-          border-radius: 4px;
-        }
-        </style>
-   </div>
-  
-  
-
 
 <!-- bellow is source link-->
   <form class= "text-center"  id="source" method = "POST">Sources List<br><br>
@@ -143,14 +108,42 @@
       
       
   </div>
+<div class ="text-center">
+  <form id="sticky-note1">
+
+    <label for="first">Jot down some notes! Click Enter to clear all.</label>
+    <input type="text" class="form-input" name="quick-note" placeholder="Review flashcards"/>
+</form>
 
 
+<form id="sticky-note2">
+
+    <label for="second">does this need a label?</label>
+    <input type="text" class="form-input" name="quick-note" placeholder="Review flashcards"/>
+</form>
+
+<form id="sticky-note3">
+
+    <label for="third">does this need a label?</label>
+    <input type="text" class="form-input" name="quick-note" placeholder="Review flashcards"/>
+</form>
+
+
+
+<style> 
+    input[type-=text] {
+      width: 200%;
+      border: 2px solid lightblue;
+      border-radius: 4px;
+    }
+    </style>
+</div>
+</div>
 
 </div>
 </div>
 </div>
-
-
+</div>
 <!--------------NO LONGER NEEDED
  Beginning of index3 (calIndex - planner) 
 <div id="index3" class="index3 bg-blue-200">
@@ -202,10 +195,7 @@
       
       <button class = "px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id="backtoDailyPage" onclick = "backtoDaily()">Go Back to daily page</button>
     ---->
-    </div>
-</div>
-
-</div>
+ 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
