@@ -27,7 +27,7 @@ getApi.addEventListener("click", function(event){
     if (select.value === ""){
       return;
     }
-  else if ( select.value === "joke" ) {
+  else if ( select.value === "joke") {
    return getJokes();
   } else if ( select.value === "fun-fact") {
   return getFunFact();
@@ -74,9 +74,75 @@ function getFunFact() {
     var random = Math.floor(Math.random() * apiArray.length);
     if (random == 0){
     getFunFact();
-fetchButton.addEventListener('click', getFunFact);
-}
+       } else if (random == 1){
+    getJokes();
+    };
+  }
  
+  // api variables
+var api = document.getElementById('api');
+var newApi = document.getElementById('new');
+var select = document.querySelector("#category");
+
+
+
+// Starts the event listener to retrive api
+newApi.addEventListener("click", function(event){
+    event.preventDefault();
+    if (select.value === ""){
+      return;
+    }
+  else if ( select.value === "joke") {
+   return getJokes();
+  } else if ( select.value === "fun-fact") {
+  return getFunFact();
+  } else if( select.value === "random"){
+   return pickForMe();
+  }
+});
+// function to get the jokes from the api
+function getJokes() {
+  var requestUrl = 'https://geek-jokes.sameerkumar.website/api?format=jsonon';
+
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      {
+        api.textContent = data;
+        return;
+      }
+    });
+}
+// function to get the facts from api
+function getFunFact() {
+  var requestUrl = 'https://asli-fun-fact-api.herokuapp.com/';
+
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+   
+    {
+        api.textContent = data.data.fact;
+        return;
+      }
+    });
+  }
+// function to pick a random api
+  function pickForMe(){
+    var apiArray = 
+    [1, 2];
+    var random = Math.floor(Math.random() * apiArray.length);
+    if (random == 0){
+    getFunFact();
+       } else if (random == 1){
+    getJokes();
+    };
+  }
 
  var todoInput = document.querySelector("#toDoInput");
  var todoForm = document.querySelector("#toDo");
@@ -159,16 +225,10 @@ function showIndex2(){
   document.getElementById('index2').style.display = "block";
   dailyPage.scrollIntoView();
   document.getElementById("index1").style.display = "none";
-  getFunFact();
+  // getFunFact();
 }
 
 
-
-  //   } else if (random == 1){
-  //   getJokes();
-  //   }
-    // }
-  
 
 
 
