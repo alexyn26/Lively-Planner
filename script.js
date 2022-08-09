@@ -153,20 +153,17 @@ todoList.addEventListener("click", function(event) {
 
 init();
 
-<<<<<<< Updated upstream
-<<<<<<< HEAD
+
 function showIndex2(){
   var dailyPage = document.getElementById("index2");
   document.getElementById('index2').style.display = "block";
   dailyPage.scrollIntoView();
   document.getElementById("index1").style.display = "none";
   getFunFact();
-=======
-
->>>>>>> Stashed changes
+}
 }
 
-<<<<<<< HEAD
+
   //   } else if (random == 1){
   //   getJokes();
   //   }
@@ -264,8 +261,6 @@ function showIndex2(){
 //       //$(function(){
 //       //  $("#calendar").load("calIndex.html"); 
 //       //});
-<<<<<<< Updated upstream
-=======
 
 
 
@@ -291,13 +286,6 @@ var srcInput = document.querySelector("#srcInput");
     li.setAttribute("data-index", i);
 
 
-
-    var checkSrc = document.createElement("INPUT");
-    checkSrc.setAttribute("type", "checkbox")
-    
-
-    li.appendChild(checkSrc);
-    srcList.appendChild(li);
   }
 }
 
@@ -332,17 +320,6 @@ srcForm.addEventListener("click", function(event) {
 });
 
 
-srcList.addEventListener("click", function(event) {
-  var element = event.target;
-  
-  if (element.matches("checkbox") === true) {
-    var index = element.parentElement.getAttribute("data-index");
-    sources.splice(index, 1);
-    
-    storeSrcs();
-    renderSrcs();
-  }
-});
 
 initSrc();
 
@@ -352,8 +329,6 @@ initSrc();
 
 
 
->>>>>>> AddSourcesListSection
-=======
 
 
 
@@ -374,10 +349,8 @@ initSrc();
 // document.getElementById("index3").style.display = "none";
 // }
 
->>>>>>> Stashed changes
-=======
+
 function changeBackground(color) {
   document.querySelector('.change-background-container').style.backgroundColor = color;
 }
 
->>>>>>> calendar-html
