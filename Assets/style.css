@@ -1,8 +1,6 @@
    /* Hides index3 (planner) until it is hovered over */
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-.index3 {
-=======
+
+
 /*.index3
 {
 >>>>>>> Stashed changes
@@ -24,25 +22,23 @@
 =======
 }*/
 #todo-count{
->>>>>>> Stashed changes
+
    display:none;
 }
-<<<<<<< HEAD
+
 #index2{
    display:block;
    opacity:1;
 }
-=======
 
->>>>>>> calendar-html
+
+
 .bottom-right {
    position: absolute;
    bottom: 8px;
    right: 16px;
    font-size: 3em;
-<<<<<<< HEAD
-}
-=======
+
 }
 
 /* .change-background { */
@@ -69,4 +65,4 @@ border-radius: 15px;
 
 
 
->>>>>>> calendar-html
+
