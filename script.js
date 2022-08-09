@@ -134,13 +134,14 @@ fetchButton.addEventListener('click', getFunFact);
     li.setAttribute("data-index", i);
 
 
-
+    
     var check = document.createElement("INPUT");
     check.setAttribute("type", "checkbox")
     
 
     li.appendChild(check);
     todoList.appendChild(li);
+    
   }
 }
 
@@ -188,4 +189,90 @@ todoList.addEventListener("click", function(event) {
 });
 
 init();
+
+
+
+
+
+var srcInput = document.querySelector("#srcInput");
+ var srcForm = document.querySelector("#source");
+ var srcList = document.querySelector("#srcList");
+ var todoCountSpan = document.querySelector("#src-count");
+ var submitsrc = document.querySelector("submitSrc");
+ 
+ var sources = [];
+
+
+  
+ function renderSrcs() {
+  srcList.innerHTML = "";
+  srcCountSpan.textContent = sources.length;
+  for (var i = 0; i < sources.length; i++) {
+    var source = sources[i];
+
+    var li = document.createElement("li");
+    li.textContent = source;
+    li.setAttribute("data-index", i);
+
+
+
+    var checkSrc = document.createElement("srcINPUT");
+    checkSrc.setAttribute("type", "checkbox")
+    
+
+    li.appendChild(checkSrc);
+    srcList.appendChild(li);
+  }
+}
+
+function initSrc() {
+  
+  var storedSrcs = JSON.parse(localStorage.getItem("sources"));
+  if (storedSrcs !== null) {
+    sources = storedSrcs;
+  }
+ 
+  renderSrcs();
+}
+
+function storeSrcs() {
+  localStorage.setItem("sources", JSON.stringify(sources));
+}
+
+srcForm.addEventListener("click", function(event) {
+  event.preventDefault();
+  var srcText = srcInput.value.trim();
+ 
+  if (srcText === "") {
+    return;
+  }
+
+  sources.push(srcText);
+  srcInput.value = "";
+ 
+
+  storeSrcs();
+  renderSrcs();
+});
+
+
+srcList.addEventListener("click", function(event) {
+  var element = event.target;
+  
+  if (element.matches("checkbox") === true) {
+    var index = element.parentElement.getAttribute("data-index");
+    sources.splice(index, 1);
+    
+    storeSrcs();
+    renderSrcs();
+  }
+});
+
+initSrc();
+
+
+
+
+
+
 
