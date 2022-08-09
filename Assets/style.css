@@ -12,12 +12,20 @@
 #todo-count {
    display:none;
 }
+<<<<<<< HEAD
 
+=======
+#index2{
+   display:none;
+   opacity:1;
+}
+>>>>>>> 9be10a0bf3e4f33c1055c4e0503ae7496e9ef07a
 .bottom-right {
    position: absolute;
    bottom: 8px;
    right: 16px;
    font-size: 3em;
+<<<<<<< HEAD
 }
 
 /* .change-background { */
@@ -44,3 +52,6 @@ border-radius: 15px;
 
 
 
+=======
+}
+>>>>>>> 9be10a0bf3e4f33c1055c4e0503ae7496e9ef07a
