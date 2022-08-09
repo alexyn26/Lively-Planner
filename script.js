@@ -413,4 +413,4 @@ initSrc();
 function changeBackground(color) {
   document.querySelector('.change-background-container').style.backgroundColor = color;
 }
-  }
+  
