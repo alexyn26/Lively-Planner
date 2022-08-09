@@ -23,11 +23,11 @@
     <!-- in the select tag the attribute of required was added to ensure an item was selected  -->
     <select name="category" id="category" required>
         <option value="">--Please choose an option--</option>
-        <option value="programming-joke">Programming Joke</option>
+        <option value="joke">Joke</option>
         <option value="fun-fact">Fun Fact</option>
         <option value="random">Random</option>
     </select> <br><br>
-    <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom"><a href="#index2">Ready to Plan!</a></button>
+    <button class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" onclick = "showIndex2()">Ready to Plan!</a></button>
    </form>
 </div>
 </div>
@@ -41,7 +41,7 @@
     <p class="api" id="api">Fun Facts</p> <!-- Fun Fact -->
  <!-- buttons -->
 <section class="text-bottom buttons">
-    <button type="button" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom new" id="new">Get a new fact.</button>
+    <button type="button" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom new" id="new">Get a new content.</button>
   </section>
   </div>
 <br>
@@ -49,24 +49,22 @@
   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSSrwtip3vZP?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 </div>
 
- <br><br>
-<div class = "p-6 h-2/5 w-2/5 bg-white rounded-xl shadow-lg flex space-x-4  absolute inset-y-50 left-10 " id = "toDoContainer">
+ <br>
+<div class = "p-6 h-1/3 w-2/5 bg-white rounded-xl shadow-lg flex space-x-4  absolute inset-y-50 left-10 " id = "toDoContainer">
   <form class= "text-center"  id="toDo" method = "POST">To Do List<br><br>
    <input type="text" class="rounded-full border border-blue-700 align-text-bottom" id="toDoInput"><br><br>
    <button type = "submit" class="px-4 py-1 text-sm text-blue-700 font-semibold rounded-full border border-blue-700 hover:bg-white hover:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 align-text-bottom" id  ="submitItem">Add to List</button>
 </form>
-
-<br><br>
 <div class = "absolute inset-x-0 bottom-20 text-center" id="listContainer">
   <p><span id="todo-count">0</span></p>
-  <ul id="todoList">
+  <ul  class = "text-center" id="todoList">
 
   </ul>
 
 </div>
 </div>
 
-<div class = "p-6 h-2/5 w-2/5 bg-white rounded-xl shadow-lg flex space-x-4 justify-items-center absolute inset-y-50 right-10  ">
+<div class = "p-6 h-1/3 w-2/5 bg-white rounded-xl shadow-lg flex space-x-4 justify-items-center absolute inset-y-50 right-10  ">
   <div class = "border-blue-700 border-rounded " id="resourceContainer">
     <a  class = "underline underline-offset-1 text-center" href = "https://developer.mozilla.org/en-US/">mdn webdocs</a><br>
     <a  class = "underline underline-offset-1 text-center" href = "https://tailwindcss.com/"> Tailwind CSS</a><br>

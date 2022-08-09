@@ -189,3 +189,11 @@ todoList.addEventListener("click", function(event) {
 
 init();
 
+function showIndex2(){
+  var dailyPage = document.getElementById("index2");
+  document.getElementById('index2').style.display = "block";
+  dailyPage.scrollIntoView();
+  document.getElementById("index1").style.display = "none";
+  getFunFact();
+}
+
