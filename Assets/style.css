@@ -1,17 +1,27 @@
    /* Hides index3 (planner) until it is hovered over */
+<<<<<<< Updated upstream
 .index3 {
+=======
+/*.index3
+{
+>>>>>>> Stashed changes
     opacity: 0;
 }
 
 .index3:hover {
    opacity: 1;
+<<<<<<< Updated upstream
 }
 
 #todo-count {
+=======
+}*/
+#todo-count{
+>>>>>>> Stashed changes
    display:none;
 }
 #index2{
-   display:none;
+   display:block;
    opacity:1;
 }
 .bottom-right {
