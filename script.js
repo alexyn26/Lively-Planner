@@ -11,24 +11,6 @@ dailyPage.scrollIntoView();
 document.getElementById("index1").style.display = "none"
 }
 
-function showIndex3(){
-var weeklyPlanner = document.getElementById("index3");
-document.getElementById("index3").style.display = "block";
-weeklyPlanner.scrollIntoView();
-document.getElementById("index2").style.display = "none";
-}
-function saveConfirm(){
-confirmText = document.getElementById("saveConfirmation");
-confirmText.textContent = "Your content has been saved.";
-}
-function backtoDaily(){
-var dailyView = document.getElementById("index2");
-document.getElementById("index2").style.display = "block";
-dailyView.scrollIntoView();
-document.getElementById("index3").style.display = "none";
-}
-
-
 
 
 
@@ -45,7 +27,7 @@ getApi.addEventListener("click", function(event){
     if (select.value === ""){
       return;
     }
-  else if ( select.value === "programming-joke" ) {
+  else if ( select.value === "joke" ) {
    return getJokes();
   } else if ( select.value === "fun-fact") {
   return getFunFact();
@@ -94,7 +76,7 @@ function getFunFact() {
     getFunFact();
 fetchButton.addEventListener('click', getFunFact);
 }
- });
+ 
 
  var todoInput = document.querySelector("#toDoInput");
  var todoForm = document.querySelector("#toDo");
@@ -171,6 +153,7 @@ todoList.addEventListener("click", function(event) {
 
 init();
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 function showIndex2(){
   var dailyPage = document.getElementById("index2");
@@ -178,38 +161,41 @@ function showIndex2(){
   dailyPage.scrollIntoView();
   document.getElementById("index1").style.display = "none";
   getFunFact();
+=======
+
+>>>>>>> Stashed changes
 }
 
-    } else if (random == 1){
-    getJokes();
-    }
-  }
+  //   } else if (random == 1){
+  //   getJokes();
+  //   }
+  // }
 
 
 
 
 //mini calendar functionality
-const date = new Date();
-date.setDate(1);
-var firstDayIndex= date.getDay();
-const monthDays=document.querySelector(".days");
-const lastDate= new Date(date.getFullYear(), date.getMonth()+1,0).getDate();
-const prevLastDay = new Date(date.getFullYear(), date.getMonth(),0).getDate();
+// const date = new Date();
+// date.setDate(1);
+// var firstDayIndex= date.getDay();
+// const monthDays=document.querySelector(".days");
+// const lastDate= new Date(date.getFullYear(), date.getMonth()+1,0).getDate();
+// const prevLastDay = new Date(date.getFullYear(), date.getMonth(),0).getDate();
 
-var months = [
-"January",
-"February",
-"March",
-"April",
-"May",
-"June",
-"July",
-"August",
-"September",
-"November",
-"December"
-];
-document.querySelector(".monthName").innerHTML = months[date.getMonth()];
+// var months = [
+// "January",
+// "February",
+// "March",
+// "April",
+// "May",
+// "June",
+// "July",
+// "August",
+// "September",
+// "November",
+// "December"
+// ];
+// document.querySelector(".monthName").innerHTML = months[date.getMonth()];
 
 
 
@@ -277,6 +263,7 @@ document.querySelector(".monthName").innerHTML = months[date.getMonth()];
 //       //$(function(){
 //       //  $("#calendar").load("calIndex.html"); 
 //       //});
+<<<<<<< Updated upstream
 =======
 
 
@@ -365,3 +352,25 @@ initSrc();
 
 
 >>>>>>> AddSourcesListSection
+=======
+  
+
+
+// function showIndex3(){
+// var weeklyPlanner = document.getElementById("index3");
+// document.getElementById("index3").style.display = "block";
+// weeklyPlanner.scrollIntoView();
+// document.getElementById("index2").style.display = "none";
+// }
+// function saveConfirm(){
+// confirmText = document.getElementById("saveConfirmation");
+// confirmText.textContent = "Your content has been saved.";
+// }
+// function backtoDaily(){
+// var dailyView = document.getElementById("index2");
+// document.getElementById("index2").style.display = "block";
+// dailyView.scrollIntoView();
+// document.getElementById("index3").style.display = "none";
+// }
+
+>>>>>>> Stashed changes
