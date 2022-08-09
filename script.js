@@ -345,7 +345,12 @@ var srcInput = document.querySelector("#srcInput");
     li.textContent = source;
     li.setAttribute("data-index", i);
 
+    var check = document.createAttributeElement("INPUT")
+    check.setAttribute("type", "checkbox")
 
+
+li.appendChild(check);
+srcList.appendChild(li);
   }
 }
 
@@ -377,6 +382,18 @@ srcForm.addEventListener("click", function(event) {
 
   storeSrcs();
   renderSrcs();
+});
+
+srcList.addEventListener("click", function(event) {
+  var element = event.target;
+  
+  if (element.matches("checkbox") === true) {
+    var index = element.parentElement.getAttribute("data-index");
+    sources.splice(index, 1);
+    
+    storeSrcs();
+    renderSrcs();
+  }
 });
 
 
