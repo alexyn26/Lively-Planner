@@ -197,7 +197,7 @@ init();
 var srcInput = document.querySelector("#srcInput");
  var srcForm = document.querySelector("#source");
  var srcList = document.querySelector("#srcList");
- var todoCountSpan = document.querySelector("#src-count");
+ var srcCountSpan = document.querySelector("#src-count");
  var submitsrc = document.querySelector("submitSrc");
  
  var sources = [];
@@ -216,7 +216,7 @@ var srcInput = document.querySelector("#srcInput");
 
 
 
-    var checkSrc = document.createElement("srcINPUT");
+    var checkSrc = document.createElement("INPUT");
     checkSrc.setAttribute("type", "checkbox")
     
 
