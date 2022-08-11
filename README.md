@@ -13,3 +13,8 @@ SO THAT my study time is more efficient and relaxing.
 <img width="1512" alt="Screen Shot 2022-08-09 at 6 26 13 PM" src="https://user-images.githubusercontent.com/107084291/183778820-cca7d135-4740-482d-88d7-282f9eeb857e.png">
 
 <img width="1512" alt="Screen Shot 2022-08-09 at 6 26 19 PM" src="https://user-images.githubusercontent.com/107084291/183778840-e7d292b1-562c-4414-be9a-0d8b1d74799b.png">
+
+
+ https://alexyn26.github.io/Lively-Planner/
+
+ https://github.com/alexyn26/Lively-Planner
