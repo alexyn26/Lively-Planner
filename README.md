@@ -1,10 +1,10 @@
 # Lively-Planner
-User Story
-As a student I want a central hub to house all my study tools and to provide some stress relief in the form of jokes and fun facts.
 
-I want to create a space that simplifies my studying time.
+USER STORY:
 
-So that I can have everything organized in a central location.
+AS A student 
+I WANT a centralized hub to organize all my study tools and provide some stress relief in the form of jokes and fun facts.
+SO THAT my study time is more efficient and relaxing.
 
 <img width="1512" alt="Screen Shot 2022-08-09 at 6 25 57 PM" src="https://user-images.githubusercontent.com/107084291/183778754-90e0d77a-205d-4fd4-9a0f-8b2ca1aca5e2.png">
 
